@@ -1,5 +1,7 @@
 TEST_MODULE_PATH=./<my_package>
 
+reset-makefile:
+	wget https://raw.githubusercontent.com/haochuanwei/make_macros/master/python_package_dev/Makefile
 clean:
 	@echo "Cleaning package build files.."
 	@rm -rf build
