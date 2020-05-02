@@ -19,4 +19,4 @@ coverage:
 	@coverage run --source=$(TEST_MODULE_PATH) -m pytest
 	@coverage report -m
 vulture:
-	vulture $(TEST_MODULE_PATH) --exclude $(VULTURE_EXCLUDE)
+	@vulture $(TEST_MODULE_PATH) --exclude $(VULTURE_EXCLUDE)
